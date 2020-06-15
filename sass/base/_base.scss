@@ -15,3 +15,8 @@ body {
     overflow: hidden;
   }
 }
+
+::selection {
+  background-color: $color-turquoise-1;
+  color: #fff;
+}

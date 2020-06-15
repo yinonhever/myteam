@@ -6,7 +6,9 @@ body {
   color: #fff;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
 }
 
@@ -14,11 +16,21 @@ h1, h2, h3 {
   &--lg {
     font-size: 10rem;
     line-height: 1;
+
+    @include respond(tablet) {
+      font-size: 6.4rem;
+      line-height: 0.875;
+    }
   }
 
   &--sm {
     font-size: 6.4rem;
     line-height: 0.875;
+  }
+
+  @include respond(mobile) {
+    font-size: 4rem;
+    line-height: 1;
   }
 
   &--colored {
@@ -39,4 +51,21 @@ h1, h2, h3 {
 .paragraph-sm {
   font-size: 1.5rem;
   line-height: 1.667;
+}
+
+.tablet-sm {
+  @include respond(tablet) {
+    font-size: 1.5rem;
+    line-height: 1.667;
+  }
+}
+
+.tablet-sm-spaced {
+  @include respond(tablet-land) {
+    line-height: 1.867;
+  }
+
+  @include respond(tablet) {
+    font-size: 1.5rem;
+  }
 }
