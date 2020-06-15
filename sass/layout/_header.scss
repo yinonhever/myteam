@@ -1,0 +1,126 @@
+.header {
+  display: flex;
+  align-items: center;
+  @include sectionPadding;
+
+  &__nav-toggle,
+  &__nav-close,
+  &__nav-pattern {
+    display: none;
+  }
+
+  &__navigation {
+    margin-left: 8.1rem;
+    flex: 1;
+
+    @include respond(tablet) {
+      margin-left: 4.8rem;
+    }
+  }
+
+  &__nav-list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__nav-link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s;
+
+    &:hover {
+      color: $color-primary-pink;
+    }
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+  }
+
+  &__btn {
+    margin-left: auto;
+  }
+
+  /*** MOBILE VIEW ***/
+  @include respond(mobile) {
+    justify-content: space-between;
+
+    &__nav-toggle {
+      display: block;
+    }
+
+    &__navigation {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 100vw;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      visibility: hidden;
+      opacity: 0;
+      transition: all 0.5s;
+      overflow: hidden;
+    }
+
+    &__navigation.active {
+      visibility: visible;
+      opacity: 1;
+    }
+
+    &__nav-list {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      width: 25.5rem;
+      max-width: 100vw;
+      background-color: $color-blue;
+      padding: 5.64rem 2.59rem 0 4.8rem;
+      flex-direction: column;
+      align-items: flex-start;
+      overflow: hidden;
+      transform: translateX(100%);
+      transition: all 0.7s;
+    }
+
+    &__navigation.active &__nav-list {
+      transform: translateX(0);
+    }
+
+    &__nav-close {
+      display: block;
+      align-self: flex-end;
+      margin-bottom: 3.95rem;
+    }
+
+    &__nav-link {
+      display: none;
+      margin-right: 0 !important;
+
+      &:not(:last-of-type) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__btn {
+      display: none;
+      margin-left: 0;
+      margin-top: 1.2rem;
+    }
+
+    &__navigation.active &__nav-link,
+    &__navigation.active &__btn {
+      // animation for these elements is applied using keyframes and jquery
+      display: block;
+    }
+
+    &__nav-pattern {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 20rem;
+      transform: translateX(50%);
+    }
+  }
+}

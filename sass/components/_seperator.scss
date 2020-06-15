@@ -1,0 +1,12 @@
+.seperator {
+  width: 5rem;
+  height: 4px;
+
+  &--azure {
+    background-color: $color-azure;
+  }
+
+  &--pink {
+    background-color: $color-primary-pink;
+  }
+}

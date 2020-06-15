@@ -1,0 +1,58 @@
+.intro {
+  padding: 7.7rem 0 25.5rem;
+  background-color: $color-primary-turquoise;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(tablet) {
+    padding: 6.4rem 0 25.6rem;
+  }
+
+  @include respond(mobile) {
+    padding: 4.8rem 0 10.8rem;
+  }
+
+  &__content {
+    display: flex;
+    align-items: center;
+    padding-right: $padding-side-desktop;
+    margin-top: 12.9rem;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    transform: translateX(calc(-13.88vw / 2));
+  }
+
+  &__pattern--1 {
+    width: 13.88vw;
+    margin-right: calc(#{$padding-side-desktop} - calc(13.88vw / 2));
+  }
+
+  &__heading {
+    width: 40vw;
+    max-width: 60rem;
+
+    @media only screen and (max-width: 1315px) {
+      width: 43vw;
+      max-width: initial;
+    }
+  }
+
+  &__left {
+    width: 30.1vw;
+    margin-left: auto;
+  }
+
+  &__text {
+    margin-top: 7.9rem;
+  }
+
+  &__pattern--2 {
+    position: absolute;
+    right: $padding-side-desktop;
+    bottom: 0;
+    width: 24.9vw;
+  }
+}

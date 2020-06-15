@@ -1,0 +1,37 @@
+.btn {
+  text-decoration: none;
+  padding: 0.9rem 3.2rem 1.1rem;
+  border-radius: 100px;
+  border: 2px solid;
+  transition: color 0.25s, background-color 0.5s;
+
+  &--primary-light {
+    color: inherit;
+    border-color: #fff;
+
+    &:hover {
+      background-color: #fff;
+      color: $color-turquoise-3;
+    }
+  }
+
+  &--primary-dark {
+    background-color: #fff;
+    color: $color-turquoise-2;
+    border-color: $color-turquoise-2;
+
+    &:hover {
+      background-color: $color-turquoise-2;
+      color: #fff;
+    }
+  }
+
+  &--secondary-light {
+    background-color: #fff;
+    color: $color-turquoise-3;
+
+    &:hover {
+      background-color: $color-azure;
+    }
+  }
+}

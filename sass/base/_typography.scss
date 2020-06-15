@@ -1,0 +1,42 @@
+body {
+  font-family: "Livvic", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.556;
+  color: #fff;
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+.heading-1 {
+  &--lg {
+    font-size: 10rem;
+    line-height: 1;
+  }
+
+  &--sm {
+    font-size: 6.4rem;
+    line-height: 0.875;
+  }
+
+  &--colored {
+    color: $color-primary-pink;
+  }
+}
+
+.heading-2 {
+  font-size: 4.8rem;
+  line-height: 1;
+}
+
+.heading-3 {
+  font-size: 1.8rem;
+  line-height: 1.556;
+}
+
+.paragraph-sm {
+  font-size: 1.5rem;
+  line-height: 1.667;
+}
