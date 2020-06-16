@@ -99,16 +99,15 @@ h3 {
       background-color: #fff;
       color: #002529; }
   .btn--primary-dark {
-    background-color: #fff;
     color: #012F34;
     border-color: #012F34; }
     .btn--primary-dark:hover {
       background-color: #012F34;
       color: #fff; }
-  .btn--secondary-light {
+  .btn--secondary {
     background-color: #fff;
     color: #002529; }
-    .btn--secondary-light:hover {
+    .btn--secondary:hover {
       background-color: #79C8C7; }
 
 .logo {
@@ -192,7 +191,7 @@ h3 {
     .header {
       padding: 0 2.4rem; } }
   .header__logo {
-    transform: translateY(4px); }
+    transform: translateY(5px); }
   .header__nav-toggle, .header__nav-close, .header__nav-pattern {
     display: none; }
   .header__navigation {
@@ -274,6 +273,51 @@ h3 {
         width: 20rem;
         transform: translateX(50%);
         z-index: -1; } }
+
+.cta {
+  background-color: #F67E7E;
+  padding: 7.6rem 0;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 900px) {
+    .cta {
+      padding: 8.4rem 12.6vw; } }
+  @media only screen and (max-width: 700px) {
+    .cta {
+      padding: 8.3rem 2.4rem; } }
+  .cta__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 63.7vw;
+    min-width: 70rem;
+    margin: auto; }
+    @media only screen and (max-width: 900px) {
+      .cta__container {
+        width: 100%;
+        min-width: initial; } }
+    @media only screen and (max-width: 700px) {
+      .cta__container {
+        flex-direction: column;
+        text-align: center; } }
+  .cta__heading {
+    color: #012F34; }
+    @media only screen and (max-width: 700px) {
+      .cta__heading {
+        margin-bottom: 2.4rem; } }
+  .cta__pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13.88vw;
+    max-width: 20rem; }
+    @media only screen and (max-width: 900px) {
+      .cta__pattern {
+        width: 26vw;
+        transform: translateY(15%); } }
+    @media only screen and (max-width: 700px) {
+      .cta__pattern {
+        width: 53vw; } }
 
 /*** INTRO SECTION ***/
 .intro {

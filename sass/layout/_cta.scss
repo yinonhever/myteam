@@ -1,0 +1,58 @@
+.cta {
+  background-color: $color-primary-pink;
+  padding: 7.6rem 0;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(tablet) {
+    padding: 8.4rem $padding-side-tablet-lg;
+  }
+
+  @include respond(mobile-land) {
+    padding: 8.3rem $padding-side-mobile;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 63.7vw;
+    min-width: 70rem;
+    margin: auto;
+
+    @include respond(tablet) {
+      width: 100%;
+      min-width: initial;
+    }
+
+    @include respond(mobile-land) {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  &__heading {
+    color: $color-turquoise-2;
+
+    @include respond(mobile-land) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 13.88vw;
+    max-width: 20rem;
+
+    @include respond(tablet) {
+      width: 26vw;
+      transform: translateY(15%);
+    }
+
+    @include respond(mobile-land) {
+      width: 53vw;
+    }
+  }
+}

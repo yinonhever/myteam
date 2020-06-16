@@ -11,22 +11,15 @@
     }
   }
 
+  @if $breakpoint == mobile-land {
+    @media only screen and (max-width: 700px){
+      @content;
+    }
+  }
+
   @if $breakpoint == mobile {
     @media only screen and (max-width: 600px) {
       @content;
     }
-  }
-}
-
-
-@mixin sectionPadding {
-  padding: 0 $padding-side-desktop;
-
-  @include respond(tablet) {
-    padding: 0 $padding-side-tablet-sm;
-  }
-
-  @include respond(mobile) {
-    padding: 0 $padding-side-mobile;
   }
 }
