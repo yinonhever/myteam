@@ -3,6 +3,10 @@
   align-items: center;
   @include sectionPadding;
 
+  &__logo {
+    transform: translateY(4px);
+  }
+
   &__nav-toggle,
   &__nav-close,
   &__nav-pattern {

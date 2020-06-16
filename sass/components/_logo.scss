@@ -1,7 +1,7 @@
 .logo {
-  width: 16rem;
+  height: 4rem;
 
   @include respond(tablet) {
-    width: 12.8rem;
+    height: 3.2rem;
   }
 }

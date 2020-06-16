@@ -1,5 +1,6 @@
+/*** INTRO SECTION ***/
 .intro {
-  padding: 7.7rem 0 25.5rem;
+  padding: 7.3rem 0 25.5rem;
   background-color: $color-primary-turquoise;
   position: relative;
   overflow: hidden;
@@ -114,6 +115,75 @@
 
     @include respond(mobile) {
       width: 95vw;
+    }
+  }
+}
+
+/*** FEATURES SECTION ***/
+.features {
+  padding: 14rem $padding-side-desktop;
+  background-color: $color-turquoise-2;
+  position: relative;
+  overflow: hidden;
+
+  @include respond(tablet) {
+    padding: 10rem $padding-side-tablet-lg;
+  }
+
+  @include respond(mobile) {
+    padding: 6.4rem $padding-side-mobile;
+  }
+
+  &__container {
+    margin-top: 5.4rem;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tablet) {
+      margin-top: 3.2rem;
+      flex-direction: column;
+    }
+  }
+
+  &__heading {
+    width: 31vw;
+
+    @include respond(tablet) {
+      width: 100%;
+      max-width: 44.5rem;
+      margin-bottom: 6.4rem;
+    }
+
+    @include respond(mobile) {
+      width: 64vw;
+      margin-bottom: 5.6rem;
+    }
+  }
+
+  &__list {
+    width: 37.5vw;
+
+    @include respond(tablet) {
+      width: 100%;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 13.88vw;
+    transform: translateX(50%);
+
+    @include respond(tablet) {
+      width: 26vw;
+      bottom: initial;
+      top: 0;
+    }
+
+    @include respond(mobile) {
+      width: 53vw;
+      max-width: 20rem;
     }
   }
 }
