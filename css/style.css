@@ -12,8 +12,8 @@ body {
     overflow: hidden; }
 
 ::selection {
-  background-color: #004047;
-  color: #fff; }
+  background-color: #79C8C7;
+  color: #002529; }
 
 @keyframes slideUp {
   0% {
@@ -209,7 +209,8 @@ h3 {
         bottom: 0;
         right: 0;
         width: 20rem;
-        transform: translateX(50%); } }
+        transform: translateX(50%);
+        z-index: -1; } }
 
 .intro {
   padding: 7.7rem 0 25.5rem;
