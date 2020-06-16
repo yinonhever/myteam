@@ -187,3 +187,76 @@
     }
   }
 }
+
+/*** TESTIMONIALS SECTION ***/
+.testimonials {
+  padding: 14rem $padding-side-desktop;
+  background-color: $color-turquoise-1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+
+  @include respond(tablet) {
+    padding: 10rem $padding-side-tablet-lg;
+  }
+
+  @include respond(mobile) {
+    padding: 14rem $padding-side-mobile;
+  }
+
+  &__heading {
+    max-width: 94rem;
+    margin: auto;
+    margin-bottom: 9.2rem;
+
+    @include respond(tablet) {
+      margin-bottom: 8.4rem;
+      max-width: 57.3rem;
+    }
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3.1rem;
+    grid-row-gap: 8.4rem;
+
+    @include respond(tablet) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+
+    &--1 {
+      width: 10.2vw;
+      top: 0;
+      left: 0;
+
+      @include respond(tablet) {
+        width: 19.1vw;
+        max-width: 14.7rem;
+      }
+
+      @include respond(mobile) {
+        width: 39.2vw;
+      }
+    }
+
+    &--2 {
+      width: 13.88vw;
+      bottom: 0;
+      right: 0;
+
+      @include respond(tablet) {
+        width: 26vw;
+        max-width: 20rem;
+      }
+
+      @include respond(mobile) {
+        width: 53.33vw;
+      }
+    }
+  }
+}

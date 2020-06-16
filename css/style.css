@@ -150,6 +150,36 @@ h3 {
       .feature__title {
         margin-bottom: 0.8rem; } }
 
+.testimonial {
+  position: relative; }
+  .testimonial__text {
+    margin-bottom: 2.4rem; }
+    @media only screen and (max-width: 900px) {
+      .testimonial__text {
+        margin-bottom: 1.6rem; } }
+  .testimonial__icon {
+    height: 5.6rem;
+    position: absolute;
+    top: -3.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1; }
+  .testimonial__role {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.385; }
+  .testimonial__avatar {
+    margin-top: 3.2rem;
+    height: 6.2rem;
+    width: 6.2rem;
+    border-radius: 50%;
+    border: 2px solid #c4fffe; }
+    @media only screen and (max-width: 900px) {
+      .testimonial__avatar {
+        margin-top: 1.6rem; } }
+
 .header {
   display: flex;
   align-items: center;
@@ -388,3 +418,57 @@ h3 {
       .features__pattern {
         width: 53vw;
         max-width: 20rem; } }
+
+/*** TESTIMONIALS SECTION ***/
+.testimonials {
+  padding: 14rem 11.4vw;
+  background-color: #004047;
+  text-align: center;
+  position: relative;
+  z-index: 1; }
+  @media only screen and (max-width: 900px) {
+    .testimonials {
+      padding: 10rem 12.6vw; } }
+  @media only screen and (max-width: 600px) {
+    .testimonials {
+      padding: 14rem 2.4rem; } }
+  .testimonials__heading {
+    max-width: 94rem;
+    margin: auto;
+    margin-bottom: 9.2rem; }
+    @media only screen and (max-width: 900px) {
+      .testimonials__heading {
+        margin-bottom: 8.4rem;
+        max-width: 57.3rem; } }
+  .testimonials__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 3.1rem;
+    grid-row-gap: 8.4rem; }
+    @media only screen and (max-width: 900px) {
+      .testimonials__grid {
+        grid-template-columns: 1fr; } }
+  .testimonials__pattern {
+    position: absolute; }
+    .testimonials__pattern--1 {
+      width: 10.2vw;
+      top: 0;
+      left: 0; }
+      @media only screen and (max-width: 900px) {
+        .testimonials__pattern--1 {
+          width: 19.1vw;
+          max-width: 14.7rem; } }
+      @media only screen and (max-width: 600px) {
+        .testimonials__pattern--1 {
+          width: 39.2vw; } }
+    .testimonials__pattern--2 {
+      width: 13.88vw;
+      bottom: 0;
+      right: 0; }
+      @media only screen and (max-width: 900px) {
+        .testimonials__pattern--2 {
+          width: 26vw;
+          max-width: 20rem; } }
+      @media only screen and (max-width: 600px) {
+        .testimonials__pattern--2 {
+          width: 53.33vw; } }

@@ -1,0 +1,40 @@
+.testimonial {
+  position: relative;
+
+  &__text {
+    margin-bottom: 2.4rem;
+
+    @include respond(tablet) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__icon {
+    height: 5.6rem;
+    position: absolute;
+    top: -3.6rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+  }
+
+  &__role {
+    margin-top: 0.2rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    font-style: italic;
+    line-height: 1.385;
+  }
+
+  &__avatar {
+    margin-top: 3.2rem;
+    height: 6.2rem;
+    width: 6.2rem;
+    border-radius: 50%;
+    border: 2px solid #c4fffe;
+
+    @include respond(tablet) {
+      margin-top: 1.6rem;
+    }
+  }
+}
