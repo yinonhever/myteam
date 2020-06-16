@@ -1,0 +1,137 @@
+.footer {
+  padding: 4.8rem $padding-side-desktop;
+  background-color: $color-turquoise-3;
+  display: flex;
+  align-items: center;
+
+  @include respond(tablet) {
+    padding: 5.6rem $padding-side-tablet-sm;
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  @include respond(mobile) {
+    padding: 6.6rem $padding-side-mobile 6.4rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+
+    @include respond(tablet) {
+      justify-content: space-between;
+      margin-bottom: 3.2rem;
+    }
+
+    @include respond(mobile) {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__left {
+    margin-right: 8.7vw;
+
+    @include respond(mobile) {
+      margin-right: 0;
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 2.5rem;
+
+    @include respond(tablet) {
+      margin-bottom: 5.3rem;
+      height: 2.4rem;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__nav-link {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.5s;
+
+    &:not(:last-child) {
+      margin-right: 4rem;
+    }
+
+    &:hover {
+      color: $color-primary-pink;
+    }
+
+    @include respond(tablet) {
+      font-size: 1.5rem;
+      line-height: 1.667;
+    }
+  }
+
+  &__text {
+    opacity: 0.6;
+
+    @include respond(tablet) {
+      text-align: right;
+    }
+
+    @include respond(mobile) {
+      text-align: center;
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    @include respond(tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @include respond(mobile) {
+      flex-direction: column;
+    }
+  }
+
+  &__social {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5.1rem;
+
+    @include respond(tablet) {
+      margin-bottom: 0;
+    }
+
+    @include respond(mobile) {
+      margin-bottom: 1.6rem;
+    }
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+  &__social-icon {
+    fill: #fff;
+    width: 2.4rem;
+    height: 2.4rem;
+    transition: fill 0.5s;
+
+    &--sm {
+      height: 1.95rem;
+    }
+
+    &:hover {
+      fill: $color-primary-pink;
+    }
+  }
+}
