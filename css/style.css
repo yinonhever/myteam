@@ -148,6 +148,15 @@ h3 {
     .card__side--back {
       padding: 3.5rem 13.7%;
       transform: translateX(-105%); }
+      @media only screen and (max-width: 900px) {
+        .card__side--back {
+          padding: 3.5rem 8.5%; } }
+      @media only screen and (max-width: 600px) {
+        .card__side--back {
+          padding: 3.5rem 13%; } }
+      @media only screen and (max-width: 310px) {
+        .card__side--back {
+          padding: 3.5rem 5%; } }
   .card.active .card__side--front {
     transform: translateX(105%); }
   .card.active .card__side--back {
@@ -199,12 +208,14 @@ h3 {
       transform: translate(-50%, -50%);
       height: 1.6rem;
       width: 1.6rem; }
-    .card__button:hover {
-      background-color: #79C8C7; }
+    @media (hover: hover) {
+      .card__button:hover {
+        background-color: #79C8C7; } }
   .card.active .card__button {
     background-color: #79C8C7; }
-    .card.active .card__button:hover {
-      background-color: #F67E7E; }
+    @media (hover: hover) {
+      .card.active .card__button:hover {
+        background-color: #F67E7E; } }
 
 .seperator {
   width: 5rem;

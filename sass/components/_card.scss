@@ -32,6 +32,18 @@
     &--back {
       padding: 3.5rem 13.7%;
       transform: translateX(-105%);
+
+      @include respond(tablet) {
+        padding: 3.5rem 8.5%;
+      }
+
+      @include respond(mobile) {
+        padding: 3.5rem 13%;
+      }
+
+      @media only screen and (max-width: 310px) {
+        padding: 3.5rem 5%;
+      }
     }
   }
 
@@ -115,7 +127,9 @@
     }
 
     &:hover {
-      background-color: $color-azure;
+      @media (hover: hover) { // isn't applied on touch devices
+        background-color: $color-azure;
+      }
     }
   }
 
@@ -123,7 +137,9 @@
     background-color: $color-azure;
 
     &:hover {
-      background-color: $color-primary-pink;
+      @media (hover: hover) { // isn't applied on touch devices
+        background-color: $color-primary-pink;
+      }
     }
   }
 }
