@@ -832,8 +832,10 @@ h3 {
 /*** CLIENTS SECTION ***/
 .clients {
   background-color: #012F34;
-  padding: 14rem 11.4vw; }
-  @media only screen and (max-width: 900px) {
+  padding: 14rem 11.4vw;
+  position: relative;
+  overflow: hidden; }
+  @media only screen and (max-width: 1250px) {
     .clients {
       padding: 10rem 5.3vw; } }
   @media only screen and (max-width: 600px) {
@@ -878,3 +880,17 @@ h3 {
       width: 14.65rem; }
     .clients__logo--5 {
       width: 8.7rem; } }
+  .clients__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.88vw; }
+    @media only screen and (max-width: 1250px) {
+      .clients__pattern {
+        width: 26vw;
+        max-width: 20rem;
+        transform: translateY(-50%); } }
+    @media only screen and (max-width: 600px) {
+      .clients__pattern {
+        width: 53vw;
+        transform: translate(-50%, -50%); } }

@@ -169,8 +169,10 @@
 .clients {
   background-color: $color-turquoise-2;
   padding: 14rem $padding-side-desktop;
+  position: relative;
+  overflow: hidden;
 
-  @include respond(tablet) {
+  @include respond(tablet-land) {
     padding: 10rem $padding-side-tablet-sm;
   }
 
@@ -246,6 +248,24 @@
       &--5 {
         width: 8.7rem;
       }
+    }
+  }
+
+  &__pattern {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13.88vw;
+
+    @include respond(tablet-land) {
+      width: 26vw;
+      max-width: 20rem;
+      transform: translateY(-50%);
+    }
+
+    @include respond(mobile) {
+      width: 53vw;
+      transform: translate(-50%, -50%);
     }
   }
 }
