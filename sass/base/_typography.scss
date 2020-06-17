@@ -25,7 +25,11 @@ h3 {
 
   &--sm {
     font-size: 6.4rem;
-    line-height: 0.875;
+    line-height: 1.563;
+
+    @include respond(tablet) {
+      line-height: 0.875;
+    }
   }
 
   @include respond(mobile) {

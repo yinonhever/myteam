@@ -21,6 +21,7 @@ $(window).resize(function () {
 
     else {
         $(".header__nav-link, .header__btn").css("animation", "none");
+        $("body").removeClass("no-scroll");
     }
 })
 

@@ -23,19 +23,63 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <!-- home
-  about
+    <main>
+      <section class="about">
+        <header class="header">
+          <a href="/">
+            <img src="images/logo.svg" alt="logo" class="logo header__logo" />
+          </a>
+          <img
+            src="images/icon-hamburger.svg"
+            alt="menu-icon"
+            class="header__nav-toggle"
+          />
+          <nav class="header__navigation">
+            <div class="header__nav-list">
+              <img
+                src="images/icon-close.svg"
+                alt="close-icon"
+                class="header__nav-close"
+              />
+              <a href="/" class="header__nav-link">home</a>
+              <a href="/about.html" class="header__nav-link">about</a>
+              <a href="/contact.html" class="btn btn--primary-light header__btn"
+                >contact us</a
+              >
+              <img
+                src="images/bg-pattern-about-1-mobile-nav-1.svg"
+                alt="nav-pattern"
+                class="header__nav-pattern"
+              />
+            </div>
+          </nav>
+        </header>
 
-  contact us
+        <div class="about__container">
+          <h1 class="heading-1 heading-1--sm about__heading">About</h1>
+          <div class="about__content">
+            <div class="seperator seperator--pink about__seperator"></div>
+            <p class="about__text tablet-sm-spaced">
+              We help companies build dynamic teams made up of top global
+              talent. Using our network of passionate professionals we drive
+              innovation and deliver incredible outcomes. Talented, diverse
+              teams shape the best products and experiences. We’ll bring those
+              teams to you.
+            </p>
+          </div>
+        </div>
 
+        <img
+          src="images/bg-pattern-about-1-mobile-nav-1.svg"
+          alt="pattern"
+          class="about__pattern"
+        />
+      </section>
+    </main>
+    <!--
+  
 
-
-  About
-
-  We help companies build dynamic teams made up of top global talent.
-  Using our network of passionate professionals we drive innovation
-  and deliver incredible outcomes. Talented, diverse teams shape the
-  best products and experiences. We’ll bring those teams to you.
+  
 
 
 
@@ -65,23 +109,63 @@
   Aden Allan
   Head of Talent
 
+ -->
 
+    <section class="cta">
+      <div class="cta__container">
+        <h2 class="heading-2 cta__heading">Ready to get started?</h2>
+        <a href="/contact.html" class="btn btn--primary-dark cta__btn"
+          >contact us</a
+        >
+      </div>
+      <img
+        src="images/bg-pattern-home-6-about-5.svg"
+        alt="pattern"
+        class="cta__pattern"
+      />
+    </section>
 
-  Ready to get started?
-
-  contact us
-
-
-
-  home
-  about
-
-  987  Hillcrest Lane
-  Irvine, CA
-  California 92714
-  Call Us : 949-833-7432
-
-  Copyright 2020. All Rights Reserved -->
+    <footer class="footer">
+      <div class="footer__main">
+        <div class="footer__left">
+          <a href="/">
+            <img src="images/logo.svg" alt="logo" class="logo footer__logo" />
+          </a>
+          <div class="footer__nav">
+            <a href="/" class="footer__nav-link">home</a>
+            <a href="/about.html" class="footer__nav-link">about</a>
+          </div>
+        </div>
+        <div class="footer__text-column">
+          <p class="paragraph-sm footer__text">987 Hillcrest Lane</p>
+          <p class="paragraph-sm footer__text">Irvine, CA</p>
+          <p class="paragraph-sm footer__text">California 92714</p>
+          <p class="paragraph-sm footer__text">Call Us : 949-833-7432</p>
+        </div>
+      </div>
+      <div class="footer__right">
+        <div class="footer__social">
+          <a href="/" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="images/icon-facebook.svg#icon"></use>
+            </svg>
+          </a>
+          <a href="/" class="footer__social-link">
+            <svg class="footer__social-icon">
+              <use xlink:href="images/icon-pinterest.svg#icon"></use>
+            </svg>
+          </a>
+          <a href="/" class="footer__social-link">
+            <svg class="footer__social-icon footer__social-icon--sm">
+              <use xlink:href="images/icon-twitter.svg#icon"></use>
+            </svg>
+          </a>
+        </div>
+        <p class="paragraph-sm footer__text">
+          Copyright 2020. All Rights Reserved
+        </p>
+      </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="index.js"></script>
