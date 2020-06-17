@@ -1,0 +1,129 @@
+.card {
+  /*** LAYOUT AND ANIMATION ***/
+  text-align: center;
+  padding-bottom: 2.8rem;
+  position: relative;
+
+  &__content {
+    background-color: $color-turquoise-2;
+    height: 25.3rem;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.6s;
+  }
+
+  &.active &__content {
+    background-color: $color-turquoise-3;
+  }
+
+  &__side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+
+    &--front {
+      padding-top: 3rem;
+      transform: translateX(0);
+    }
+
+    &--back {
+      padding: 3.5rem 13.7%;
+      transform: translateX(-105%);
+    }
+  }
+
+  &.active &__side--front {
+    transform: translateX(105%);
+  }
+
+  &.active &__side--back {
+    transform: translateX(0);
+  }
+
+  /*** FRONT SIDE ***/
+  &__avatar {
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    border: 2px solid #c4fffe;
+    margin-bottom: 1rem;
+  }
+
+  &__role {
+    font-weight: 500;
+    font-style: italic;
+  }
+
+  /*** BACK SIDE ***/
+  &__side--back &__name {
+    margin-bottom: 0.8rem;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+
+  &__social-link:not(:last-child) {
+    margin-right: 1.6rem;
+  }
+
+  &__social-icon {
+    fill: #fff;
+    transition: fill 0.5s;
+
+    &:hover {
+      fill: $color-primary-pink;
+    }
+
+    &--1 {
+      width: 2.4rem;
+      height: 1.95rem;
+    }
+
+    &--2 {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  /*** BUTTON ***/
+  &__button {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $color-primary-pink;
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 1.6rem;
+      width: 1.6rem;
+    }
+
+    &:hover {
+      background-color: $color-azure;
+    }
+  }
+
+  &.active &__button {
+    background-color: $color-azure;
+
+    &:hover {
+      background-color: $color-primary-pink;
+    }
+  }
+}
