@@ -1053,3 +1053,52 @@ h3 {
       @media only screen and (max-width: 700px) {
         .contact__pattern--2 {
           transform: translate(50%, 50%); } }
+
+/*** SUCCESS MESSAGE ***/
+.success {
+  visibility: hidden;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 2.4rem;
+  z-index: 9999;
+  transition: all 0.3s; }
+  .success.active {
+    visibility: visible;
+    opacity: 1; }
+  .success__content {
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    width: 90%;
+    max-width: 45rem;
+    height: 25rem;
+    background-color: #004047;
+    transform: translate(-50%, 80%);
+    opacity: 0;
+    transition: all 0.5s 0.2s; }
+  .success.active .success__content {
+    opacity: 1;
+    transform: translate(-50%, -50%); }
+  .success__close {
+    position: absolute;
+    top: 3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    cursor: pointer;
+    transition: color 0.5s; }
+    .success__close:hover {
+      color: #F67E7E; }
+  .success__text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 50%;
+    font-weight: 700;
+    transform: translateY(-50%);
+    padding: 0 3rem; }

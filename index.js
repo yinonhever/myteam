@@ -59,9 +59,13 @@ $(".form").on("submit", function () {
 
     if (formValid) {
         $(".form__input").val("");
+        $(".success").addClass("active");
     }
 })
 
+$(".success__close").click(function() {
+    $(".success").removeClass("active");
+})
 
 // CHECKING IF INPUT IS EMPTY
 
