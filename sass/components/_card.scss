@@ -117,17 +117,9 @@
     cursor: pointer;
     transition: all 0.5s;
 
-    img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 1.6rem;
-      width: 1.6rem;
-    }
-
     &:hover {
-      @media (hover: hover) { // isn't applied on touch devices
+      @media (hover: hover) {
+        // isn't applied on touch devices
         background-color: $color-azure;
       }
     }
@@ -137,9 +129,23 @@
     background-color: $color-azure;
 
     &:hover {
-      @media (hover: hover) { // isn't applied on touch devices
+      @media (hover: hover) {
+        // isn't applied on touch devices
         background-color: $color-primary-pink;
       }
     }
+  }
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.6rem;
+    width: 1.6rem;
+  }
+
+  &.active &__icon {
+    transform: translate(-50%, -50%) rotate(45deg);
   }
 }

@@ -201,13 +201,6 @@ h3 {
     border-radius: 50%;
     cursor: pointer;
     transition: all 0.5s; }
-    .card__button img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 1.6rem;
-      width: 1.6rem; }
     @media (hover: hover) {
       .card__button:hover {
         background-color: #79C8C7; } }
@@ -216,6 +209,15 @@ h3 {
     @media (hover: hover) {
       .card.active .card__button:hover {
         background-color: #F67E7E; } }
+  .card__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 1.6rem;
+    width: 1.6rem; }
+  .card.active .card__icon {
+    transform: translate(-50%, -50%) rotate(45deg); }
 
 .seperator {
   width: 5rem;
@@ -905,3 +907,77 @@ h3 {
       .clients__pattern {
         width: 53vw;
         transform: translate(-50%, -50%); } }
+
+.contact {
+  background-color: #014E56;
+  padding: 7.3rem 0 11.4rem; }
+  @media only screen and (max-width: 1250px) {
+    .contact {
+      padding: 6.4rem 0 11.2rem; } }
+  @media only screen and (max-width: 700px) {
+    .contact {
+      padding: 4.4rem 0 8.8rem; } }
+  .contact__content {
+    margin-top: 12rem;
+    padding: 0 11.4vw;
+    display: flex;
+    justify-content: space-between; }
+    @media only screen and (max-width: 1250px) {
+      .contact__content {
+        margin-top: 11.2rem;
+        padding: 0 16.5vw;
+        flex-direction: column; } }
+    @media only screen and (max-width: 700px) {
+      .contact__content {
+        margin-top: 8rem;
+        padding: 0 12.6vw; } }
+    @media only screen and (max-width: 600px) {
+      .contact__content {
+        padding: 0 2.4rem; } }
+  .contact__intro, .contact__form {
+    width: 37.5vw; }
+    @media only screen and (max-width: 1250px) {
+      .contact__intro, .contact__form {
+        width: 100%;
+        max-width: 60rem;
+        margin: auto; } }
+  .contact__intro {
+    margin-right: 3rem; }
+    @media only screen and (max-width: 1250px) {
+      .contact__intro {
+        margin-right: auto;
+        margin-bottom: 6.4rem; } }
+    @media only screen and (max-width: 700px) {
+      .contact__intro {
+        margin-bottom: 5.6rem; } }
+  .contact__heading {
+    margin-bottom: 1.6rem; }
+    @media only screen and (max-width: 1250px) {
+      .contact__heading {
+        margin-bottom: 2.4rem;
+        line-height: 0.875;
+        text-align: center; } }
+    @media only screen and (max-width: 700px) {
+      .contact__heading {
+        margin-bottom: 1.6rem; } }
+  .contact__subheading {
+    font-size: 3.2rem;
+    line-height: 1.5;
+    margin-bottom: 3.2rem; }
+    @media only screen and (max-width: 1250px) {
+      .contact__subheading {
+        margin-bottom: 2.4rem;
+        text-align: center; } }
+    @media only screen and (max-width: 700px) {
+      .contact__subheading {
+        margin-bottom: 4rem; } }
+  .contact__feature {
+    display: flex;
+    align-items: center; }
+    .contact__feature:not(:last-child) {
+      margin-bottom: 0.8rem; }
+  .contact__icon {
+    height: 7.2rem;
+    margin-right: 2.3rem; }
+  .contact__text {
+    font-weight: 700; }

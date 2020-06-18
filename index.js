@@ -42,13 +42,5 @@ function animateMenuItems() {
 // MANAGING THE CARDS
 
 $(".card__button").click(function () {
-    const card = $(this).parent();
-    card.toggleClass("active");
-
-    if (card.hasClass("active")) {
-        $(this).children("img").prop("src", "images/icon-close-dark.svg");
-    }
-    else {
-        $(this).children("img").prop("src", "images/icon-cross.svg");
-    }
+    $(this).parent().toggleClass("active");
 })
