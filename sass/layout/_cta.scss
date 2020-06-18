@@ -1,8 +1,6 @@
 .cta {
   background-color: $color-primary-pink;
   padding: 7.6rem 0;
-  position: relative;
-  overflow: hidden;
 
   @include respond(tablet) {
     padding: 8.4rem $padding-side-tablet-lg;

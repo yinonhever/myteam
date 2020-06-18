@@ -16,6 +16,11 @@ body {
   }
 }
 
+section, main {
+  position: relative;
+  overflow: hidden;
+}
+
 ::selection {
   background-color: $color-azure;
   color: $color-turquoise-3;

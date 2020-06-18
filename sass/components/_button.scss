@@ -5,6 +5,14 @@
   border: 2px solid;
   transition: color 0.25s, background-color 0.5s;
 
+  // for the <button> element
+  cursor: pointer;
+  outline: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  font-weight: inherit;
+
   &--primary-light {
     color: inherit;
     border-color: #fff;
@@ -28,7 +36,8 @@
   &--secondary {
     background-color: #fff;
     color: $color-turquoise-3;
-
+    border-color: transparent;
+    
     &:hover {
       background-color: $color-azure;
     }

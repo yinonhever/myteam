@@ -2,8 +2,6 @@
 .intro {
   padding: 7.3rem 0 25.5rem;
   background-color: $color-primary-turquoise;
-  position: relative;
-  overflow: hidden;
 
   @include respond(tablet) {
     padding: 6.4rem 0 25.6rem;
@@ -123,8 +121,6 @@
 .features {
   padding: 14rem $padding-side-desktop;
   background-color: $color-turquoise-2;
-  position: relative;
-  overflow: hidden;
 
   @include respond(tablet) {
     padding: 10rem $padding-side-tablet-lg;
@@ -193,7 +189,6 @@
   padding: 14rem $padding-side-desktop;
   background-color: $color-turquoise-1;
   text-align: center;
-  position: relative;
   z-index: 1;
 
   @include respond(tablet) {
